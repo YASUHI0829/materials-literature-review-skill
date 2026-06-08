@@ -1,0 +1,2 @@
+ID,Bucket,Priority,Year,Reference,RelevanceScore,AuthorityScore,OverallScore,Tier,Material,Input,Method,Output,RelevanceToProject,URL,Status
+T01,Material_texture_formability,High,YYYY,"Author, Title",,,,,target material,microstructure or texture,model or experiment,target property,Why this paper matters,https://doi.org/...,needs verification

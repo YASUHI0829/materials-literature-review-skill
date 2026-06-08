@@ -1,0 +1,4 @@
+interface:
+  display_name: "Materials Literature Review"
+  short_description: "Build scored materials-science review matrices"
+  default_prompt: "Use $materials-literature-review to expand and score literature for a materials structure-property review."
