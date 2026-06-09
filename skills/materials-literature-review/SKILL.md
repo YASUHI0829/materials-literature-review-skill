@@ -45,6 +45,7 @@ For a project-specific review, prioritize papers that connect at least two of th
 
 Keep every row concise but decision-useful:
 
+- `ID`: use an internal code, not a DOI or citation number. Prefer a stable lane prefix plus an order number, such as `A01` for texture-to-r-value papers, `B01` for EBSD or microstructure-property ML, `C01` for CP surrogates, `D01` for calibration or UQ, `F01` for foundations or reviews, and `H01` for virtual material testing. Explain the legend in Markdown matrices.
 - `Role`: what the paper contributes to the target review, such as input representation, calibration method, surrogate precedent, validation risk, or physics foundation.
 - `EvidenceClass`: direct evidence, transferable evidence, method evidence, validation caution, or inference support.
 - `Reference`: title plus first author when known.
