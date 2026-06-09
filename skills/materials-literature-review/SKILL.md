@@ -14,7 +14,17 @@ description: Build large, evidence-tracked materials-science literature reviews 
 4. Verify high-priority papers by DOI, publisher page, arXiv, author page, or indexed bibliographic source. Mark unverified records clearly.
 5. Score each paper on relevance and authority, then assign tiers. Use `references/scoring_rubric.md` and optionally `scripts/score_literature_matrix.py`.
 6. Do citation chasing from Core papers: backward references for foundations, forward citations for newer methods.
-7. Write the review from the matrix. Use `assets/templates/review_outline.md` and `assets/templates/paper_extraction_note.md`.
+7. Write the review from the matrix. Use `assets/templates/review_outline.md`, `assets/templates/chinese_accessible_review_outline.md`, and `assets/templates/paper_extraction_note.md`.
+
+## Default Outputs
+
+Unless the user asks for another format, produce these artifacts for a serious review task:
+
+- `focused_scored_matrix_<date>.csv`: a topic-specific subset of the larger paper pool, with relevance/authority scores, tier, evidence class, and role in the target research direction.
+- `focused_scored_matrix_<date>.md`: a readable Markdown version of the same matrix for discussion, thesis notes, or slides.
+- `literature_review_chinese_<date>.md`: a Chinese, accessible, detailed review that explains the field to readers who are not already specialists.
+
+Use `assets/templates/focused_scored_matrix_template.csv` for the focused matrix and `assets/templates/chinese_accessible_review_outline.md` for the Chinese review.
 
 ## Search Lanes
 
@@ -35,6 +45,8 @@ For a project-specific review, prioritize papers that connect at least two of th
 
 Keep every row concise but decision-useful:
 
+- `Role`: what the paper contributes to the target review, such as input representation, calibration method, surrogate precedent, validation risk, or physics foundation.
+- `EvidenceClass`: direct evidence, transferable evidence, method evidence, validation caution, or inference support.
 - `Reference`: title plus first author when known.
 - `Input`: microscopy map, ODF, pole figure, texture components, synthetic simulation data, experimental curve, etc.
 - `Method`: CPFE, CP-FFT, VPSC, CNN, GNN, GP, Bayesian optimization, analytical texture model, etc.
@@ -90,3 +102,11 @@ Load `references/synthesis_protocol.md` before drafting a review section. Preser
 - project-specific inferences made by connecting those lines.
 
 Make the gap statement explicit: most papers cover one or two links in the chain; the review should identify what remains missing in the full structure-property workflow.
+
+For Chinese review writing, prioritize clarity before elegance:
+
+- Start with the research direction, feasibility, and novelty.
+- Add a short beginner-friendly explanation of key terms.
+- Explain the literature by lanes, not paper-by-paper chronology.
+- State what is direct evidence, what is transferable, and what is only methodological support.
+- End with an executable research plan and a concise paragraph the user can reuse in a meeting or thesis draft.

@@ -1,0 +1,2 @@
+ID,Role,EvidenceClass,Bucket,Priority,Year,Reference,RelevanceScore,AuthorityScore,OverallScore,Tier,Material,Input,Method,Output,UseInReview,URL,Status
+T01,Closest method precedent,Direct method precedent,Physics_model_surrogate,High,YYYY,"Author, Title",5,4,4.6,Core,target material,microstructure or texture plus parameters,surrogate model,target response,Why this paper matters for the focused topic,https://doi.org/...,needs verification
